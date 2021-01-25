@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     index: "./src/js/index.js",
     another: "./src/js/another.js",
+    fotowoltaika: "./src/js/fotowoltaika.js"
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -85,8 +86,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/another.html",
       inject: true,
-      chunks: ["index", "another"],
+      chunks: ["fotowoltaika"],
       filename: "another.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/fotowoltaika.html",
+      inject: true,
+      chunks: ["another"],
+      filename: "fotowoltaika.html",
     }),
   ],
 };

@@ -1,6 +1,5 @@
+console.log("hellooooooooo");
 import '../scss/main.scss';
-console.log("hello");
-
 const ham = document.querySelector('.ham--js');
 
 ham.addEventListener('click', () => {
@@ -18,69 +17,60 @@ menuBtn.addEventListener('click', () => {
     menuOpen = false;
   }
 });
+const itemmOne = document.querySelector('.catalog__list-itemm1--js');
+const itemmTwo = document.querySelector('.catalog__list-itemm2--js');
+const itemmThree = document.querySelector('.catalog__list-itemm3--js');
+const itemmFour = document.querySelector('.catalog__list-itemm4--js');
 
-const item = document.querySelector('.catalog__list-item--js');
-const itemOne = document.querySelector('.catalog__list-item1--js');
-const itemTwo = document.querySelector('.catalog__list-item2--js');
-const itemThree = document.querySelector('.catalog__list-item3--js');
-const itemFour = document.querySelector('.catalog__list-item4--js');
 
-const info = document.querySelector('.catalog__info--js');
-const infoOne = document.querySelector('.catalog__info--js1');
-const infoTwo = document.querySelector('.catalog__info--js2');
-const infoThree = document.querySelector('.catalog__info--js3');
-const infoFour = document.querySelector('.catalog__info--js4');
+const infooOne = document.querySelector('.catalog__infoo--js1');
+const infooTwo = document.querySelector('.catalog__infoo--js2');
+const infooThree = document.querySelector('.catalog__infoo--js3');
+const infooFour = document.querySelector('.catalog__infoo--js4');
 
-const other = document.querySelector('.catalog__info');
-const other1 = document.querySelector('.catalog__info1')
-const other2 = document.querySelector('.catalog__info2')
-const other3 = document.querySelector('.catalog__info3')
-const other4 = document.querySelector('.catalog__info4')
 
-item.addEventListener('click', () => {
-    info.classList.toggle('catalog__info--open');
-    other1.classList.remove('catalog__info--open');
-    other2.classList.remove('catalog__info--open');
-    other3.classList.remove('catalog__info--open');
-    other4.classList.remove('catalog__info--open');
+const otherr1 = document.querySelector('.catalog__infoo1')
+const otherr2 = document.querySelector('.catalog__infoo2')
+const otherr3 = document.querySelector('.catalog__infoo3')
+const otherr4 = document.querySelector('.catalog__infoo4')
+
+
+
+
+
+itemmOne.addEventListener('click', () => {
+    infooOne.classList.toggle('catalog__infoo--open');
+    
+    otherr2.classList.remove('catalog__infoo--open');
+    otherr3.classList.remove('catalog__infoo--open');
+    otherr4.classList.remove('catalog__infoo--open');
 });
 
 
 
-itemOne.addEventListener('click', () => {
-    infoOne.classList.toggle('catalog__info--open');
-    other.classList.remove('catalog__info--open');
-    other2.classList.remove('catalog__info--open');
-    other3.classList.remove('catalog__info--open');
-    other4.classList.remove('catalog__info--open');
+itemmTwo.addEventListener('click', () => {
+    infooTwo.classList.toggle('catalog__infoo--open');
+    otherr1.classList.remove('catalog__infoo--open');
+   
+    otherr3.classList.remove('catalog__infoo--open');
+    otherr4.classList.remove('catalog__infoo--open');
 });
 
-
-
-itemTwo.addEventListener('click', () => {
-    infoTwo.classList.toggle('catalog__info--open');
-    other1.classList.remove('catalog__info--open');
-    other.classList.remove('catalog__info--open');
-    other3.classList.remove('catalog__info--open');
-    other4.classList.remove('catalog__info--open');
+itemmThree.addEventListener('click', () => {
+  infooThree.classList.toggle('catalog__infoo--open');
+  otherr1.classList.remove('catalog__infoo--open');
+  
+  otherr2.classList.remove('catalog__infoo--open');
+  otherr4.classList.remove('catalog__infoo--open');
 });
 
-itemThree.addEventListener('click', () => {
-  infoThree.classList.toggle('catalog__info--open');
-  other1.classList.remove('catalog__info--open');
-  other.classList.remove('catalog__info--open');
-  other2.classList.remove('catalog__info--open');
-  other4.classList.remove('catalog__info--open');
+itemmFour.addEventListener('click', () => {
+  infooFour.classList.toggle('catalog__infoo--open');
+  otherr1.classList.remove('catalog__infoo--open');
+ 
+  otherr2.classList.remove('catalog__infoo--open');
+  otherr3.classList.remove('catalog__infoo--open');
 });
-
-itemFour.addEventListener('click', () => {
-  infoFour.classList.toggle('catalog__info--open');
-  other1.classList.remove('catalog__info--open');
-  other.classList.remove('catalog__info--open');
-  other2.classList.remove('catalog__info--open');
-  other3.classList.remove('catalog__info--open');
-});
-
 
 
 (function() {

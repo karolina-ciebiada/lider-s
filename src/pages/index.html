@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
+    <title>Lider-s</title>
     <meta name="description" content="Your project description" />
     <!-- Title -->
     <meta property="og:title" content="" />
@@ -16,7 +16,8 @@
       property="og:image"
       content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
     />
-
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <!-- uncomment the line below to enable PWA  -->
     <!-- <link rel="manifest" href="manifest.json" /> -->
 
@@ -145,9 +146,153 @@
     />
   </head>
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
+
+    <div class="navigation">
+      <a href="index.html"><img src="../assets/img/lider-logo.svg" class="hello__img"></img></a>
+      <ul class="navi">
+        <li class="navi-item"><a href="index.html" class="navi-links">STRONA GŁÓWNA</a></li>
+        <li class="navi-item"><a href="another.html" class="navi-links">FOTOWOLTAIKA</a></li>
+        <li class="navi-item"><a href="fotowoltaika.html" class="navi-links">ŁOŻYSKA</a></li>
+        <li class="navi-item"><a href="#contact" class="navi-links">KONTAKT</a></li>
+      </ul>
+      
+      <div class="menu-btn">
+        <div class="menu-btn__burger ham--js"></div>
+        </div>
+        
+  </div>
+
+  <nav class="navigation__bar navigation--js"> 
+<ul class="navigation__list"><h4 class="navigation__header">MENU</h4>
+  <a href="index.html" class="navigation__links"><li class="navigation__list-item">STRONA GŁÓWNA</a></li>
+  <li class="navigation__list-item"><a href="another.html" class="navigation__links">FOTOWOLTAIKA</a></li>
+  <li class="navigation__list-item"><a href="fotowoltaika.html" class="navigation__links">ŁOŻYSKA</a></li>
+  <li class="navigation__list-item"><a href="#contact" class="navigation__links">KONTAKT</a></li>
+</ul>
+  </nav>
+
+ 
+  
+  <div class="topbar">
+<h6 class="topbar__text">STRONA GŁÓWNA</h6>
+  </div>
+
+  <div class="intro-slideshow">
+    <img src="../assets/img/tlo1.jpg"/>
+    <img src="../assets/img/tlo2.jpg"/>
+    <img src="../assets/img/tlo3.jpg"/>
+    <img src="../assets/img/tlo4.jpg"/>
+  </div>
+  <div class="wrapper">
+    <div class="button">
+        <div class="icon"><img src="../assets/img/mess.svg" class="i"/></div>
+        <span class="span"><a href="https://www.facebook.com/fotowoltaika.lider.s"target="_blank" class="icon-link">Messenger</a></span>
     </div>
+    <div class="button">
+        <div class="icon"><img src="../assets/img/phonee.svg" class="i"/></div>
+        <span class="span">+48 692-062-113</span>
+    </div>
+    <div class="button">
+        <div class="icon"><img src="../assets/img/mail.svg" class="i"/></div>
+        <span class="span"><a href="mailto:biuro.liders@gmail.com" class="icon-link">biuro.liders@gmail.com</a></span>
+    </div>
+   
+</div>
+  <section class="hello">
+  <header class="hello__header"><h1>Lider-S <br>Fotowoltaika</h1></header>
+  <p class="hello__text">Witaj na naszej stronie! Od lat specjalizujemy się w doradztwie, sprzedaży oraz montażu instalacji fotowoltaicznych. Ponadto w swojej ofercie posiadamy wszelkie typy łożysk. Prowadzimy sprzedaż hurtową jak i detaliczną, oferujemy pełne wsparcie produktowe.   
+      Zachęcamy do <a href="#about"><span class="hello__special">zapoznania się</a></span> z naszą firmą oraz <a href="#contact"><span class="hello__special">kontaktu</span></a>.  </p>
+     <img src="../assets/img/scroll.svg" class="scroll-down1"/>
+  </section>
+
+
+
+  <section class="about" id="about">
+<h2 class="white__header">O nas</h2>
+
+
+<div class="about__articles">
+<article class="about__section">
+<img src="../assets/img/who.svg" class="icons" />
+<h3 class="about__header">Kim jesteśmy?</h3>
+<p class="about__text"> Jesteśmy Polską firmą, powstaliśmy w 2010  roku. Rozwój jest dla nas najważniejszy, dlatego stale pracujemy nad powiększeniem naszego asortymentu by dopasować się do indywidualnych potrzeb każdego klienta. Doskonale znamy swoje produkty, co pozwala nam nawiązać trwałą stałą współpracę z klientami z Polski i zagranicy. Powiedz nam, jak możemy ci pomóc. </p>
+</article>
+
+
+<article class="about__section">
+  <img src="../assets/img/offert.svg" class="icons"/>
+  <h3 class="about__header">Co oferujemy?</h3>
+<ul class="about__list">
+  <li class="list-item">Kompletne instalacje fotowoltaiczne</li>
+  <li class="list-item">Panele fotowoltaiczne</li>
+  <li class="list-item">Inwertery </li>
+  <li class="list-item">Konstrukcje fotowoltaiczne</li>
+  <li class="list-item">Akcesoria montażowe</li>
+  <li class="list-item">Pompy ciepła</li>
+  <li class="list-item">Łożyska</li>
+</ul>
+</article>
+
+<article class="about__section">
+<img src="../assets/img/hands.svg" class="icons"/>
+<h3 class="about__header">Dlaczego my?</h3>
+<ul class="about__list">
+  <li class="list-item">Produkt dobierany indywidualnie pod potrzeby klienta</li>
+  <li class="list-item">Produkty bezpośrednio od producentów</li>
+  <li class="list-item">Gwarancja najwyższej jakości </li>
+  <li class="list-item">Szeroka oferta </li>
+  <li class="list-item">Pełna obsługa techniczna oraz wsparcie klienta</li>
+</ul>
+</article>
+</div>
+
+  </section>
+
+
+<section class="stats">
+  <h2 class="black__header">W latach 2018-2020 udało nam się:</h2>
+<div class="stats__box">
+<div class="stats__stripe"></div>
+<div class="stats__stripe2"></div>
+<div class="stats__stripe3"></div>
+<div class="stats__stripe4"></div>
+<div class="stats__stripe5"></div>
+<div class="stats__stripe6"></div>
+</div>
+<div class="stats__years-box">
+<span class="stats__years">2018</span>
+<span class="stats__years">2019</span>
+<span class="stats__years">2020</span>
+</div>
+
+<div class="stats__info-box">
+<p class="stats__info"><span class="stats__info-blue">fotowoltaika</span> </p>
+<p class="stats__info"><span class="stats__info-yellow">łożyska</span> </p>
+</div>
+
+<ul class="stats__list">
+  <li>Dzięki nam blisko <span class="stats__special">2500</span> osób korzysta z darmowej energii elektrycznej</li>
+  <li>Założysliśmy ponad <span class="stats__special">15 000 kWp</span> instalacji fotowoltaicznych</li>
+  <li>Stale współpracujemy z blisko <span class="stats__special">15</span> firmami z branży</li>
+</ul>
+</section>
+
+
+<section class="contact" id="contact">
+  <h2 class="contact__header">Kontakt</h2>
+  <p class="contact__text">Zapraszamy do skontaktowania się z nami! Odpowiemy na wszystkie pytania.</p>
+  <div class="contact__icons-box">
+    
+  <img src="../assets/img/phone.svg"class="contact__icon"/>
+  <h5 class="contact__icon-text-phone"> +48 692-062-113 </br>+48 692-062-113</h5>
+
+  <img src="../assets/img/mail2.svg"class="contact__icon"/>
+  <a href="mailto:biuro.liders@gmail.com"><h5 class="contact__icon-text">biuro.liders@gmail.com</h5></a>
+  <img src="../assets/img/fb.svg" class="contact__icon"/>
+  <a href="https://www.facebook.com/fotowoltaika.lider.s/" target="_blank"><h5 class="contact__icon-text">fb.com/Fotowoltaika.lider.s</h5></a>
+</div>
+
+</section>
+    
   </body>
 </html>
